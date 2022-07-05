@@ -1,0 +1,46 @@
+.restaurant_page{
+    width:100%;
+
+    .restaurant_page_upper_part{
+        height: 400px;
+        background-size: 100% 400px;
+    
+        .restaurant_page_black_box{
+            background-color: rgba(0,0,0,.5);
+            color: #fff;
+            position: absolute;
+            height:200px;
+            width: 100%;
+
+            .restaurant_page_name_ratings{
+                margin-top: 35px;
+                margin-left: 200px;
+
+                .restaurant_page_name{
+                    font-size: 20px;
+                    font-weight: bold;
+                    
+                }
+                .restaurant-container_ratings{
+                    display:flex;
+                    .restaurant-container_rating_stars{
+                        display:flex;
+                        justify-content: space-between;
+                        align-items: center;
+            
+                        .restaurant-container_image_star{
+                            width:15px;
+                            height:15px;
+                        }
+                    }
+                    .restaurant-container_rating{
+                        margin-left: 10px;
+                    }
+                }
+            } 
+        }  
+    }
+ 
+}
+
+

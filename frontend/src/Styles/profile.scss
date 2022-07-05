@@ -1,0 +1,111 @@
+@import '../Variables/_variables.scss';
+
+.header {
+  background-image: url('../assets/zurich.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: 0;
+  height: 160px;
+  width: 100%;
+}
+
+.profile-container {
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+
+  .profile-left-container {
+    width: 200px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+
+    .profile-pic {
+      height: 200px;
+      width: 200px;
+      border-radius: 8%;
+      border: 5px 5px 15px 1px rgba(112,112,112,.5);
+    }
+
+    .left-profile {
+      background-color: white;
+
+      .profile-title {
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 10px;;
+      }
+
+      .box {
+        display: flex;
+        padding-left: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.342);
+        border-left: $BottomW;
+        font-size: 16px;
+        cursor: pointer;
+        
+        .star, .comment, .restaurant, .edit {
+          padding-right: 10px;
+        }
+      }
+
+      div.box:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+      }
+  
+      .box:active, .box:focus {
+        border-left: $BottomO;
+        background-color: #eaeaea;
+      }
+    }
+    
+  }
+
+  .profile-middle-container {
+    width: 40%;
+
+    .profile-box-1 {
+      color: rgb(255, 255, 255);
+      padding-left: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 2px;
+      height: 79px;
+      
+
+    }
+
+    .review-box {
+      // background-color: white;
+      height: 345px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .medium-button {
+        @include med-button;
+      }
+
+
+
+    }
+  }
+
+  .profile-right-container {
+    width: 30%;
+    margin-top: 0px;
+    margin-left: 10px;
+    
+
+    .empty {
+      height: 90px;
+    }
+
+    h5 {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import '../Variables/_variables.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $White;
+  height: 8%;
+
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: $BottomG;
+    width: 100%;
+    
+    .left {
+      display: flex;
+      justify-content: space-between;
+      justify-items: flex-start;
+      align-items: center;
+      width: 30%;
+      margin-left: 2%;
+    }
+
+    .middle {
+      width: 45%;
+    }
+
+    .right {
+      display: flex;
+      justify-content: space-between;
+      justify-items: flex-end;
+      align-items: center;
+      width: 15%;
+      margin-right: 2%;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2%;
+    height: 20%;
+  }
+}

@@ -1,0 +1,25 @@
+@import './_variables.scss';
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: $Normal;
+}
+
+#Page {
+  background-color: $Grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 98vh;
+  width: 100vw;
+
+  #main {
+      display: flex; 
+      flex-direction: column;
+      flex-grow: 1;
+      align-items: center;
+      overflow-y: auto;
+  }
+}

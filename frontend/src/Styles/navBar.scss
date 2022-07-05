@@ -1,0 +1,77 @@
+@import '../Variables/_variables.scss';
+
+.nav-bar {
+  height: 7%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: $White;
+  box-shadow: $BoxShadow;
+  font-size: $XLarge;
+  font-style: $Normal;
+
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 15%;
+  }
+
+  .middle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%;
+
+    .link-container {
+      display: flex;
+      justify-content: space-around;
+      width: 10%;
+      cursor: pointer;
+
+      .link {
+        border-bottom: $BottomW;
+      }
+      
+      .link:focus {
+        border-bottom: $BottomO;
+      }
+      .link:hover {
+        color: $Orange;
+      }
+    }
+
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    
+
+    .button-container {
+      @include med-button;
+      font-size: medium;
+      display: flex;
+      height: 40px;
+
+
+      .link-signup, .link-login {
+        text-decoration: none;
+        padding: 10px;
+        color: $White;
+      }
+      .link-signup:hover, .link-login:hover {
+        color: rgba(0, 0, 0, .6);
+      }
+    }
+    
+  }
+}

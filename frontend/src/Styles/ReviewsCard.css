@@ -1,0 +1,84 @@
+.review-container{
+  border-radius: 3px;
+  border: solid 1px #EBEBEB; 
+  border-top: solid 8px #E47D31;
+  background-color: #ffffff;
+  display: inline-block;
+  width: 270px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.user-image{
+  width: 50px;
+}
+
+.username-name{
+  font-size: 20px;
+  color: #E47D31;
+  font-weight: 700;
+}
+
+.top-review-container{
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1px #EBEBEB;
+}
+
+.username-label {
+  padding: 5px;
+}
+
+.bottom-review-container {
+  padding: 10px;
+  width: 249px;
+}
+
+.retaurant-name {
+  font-size: 18px;
+  color: #E47D31;
+  font-weight: 700;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.like-comment-container {
+  background-color: rgba(145, 145, 145, 0.6);
+  border-radius: 28px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  height: 33px;
+  font-size: 16px;
+}
+
+.thumbsup {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  width: 20px;
+}
+
+.thumbsup-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 124px;
+  border-right: 1px white solid;
+  padding-left: 30px;
+}
+
+.like-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 124px;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 124px;
+  justify-content: center;
+}
+

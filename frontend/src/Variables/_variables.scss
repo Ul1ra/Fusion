@@ -1,0 +1,63 @@
+// Import font weights
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+// Colors
+$Orange: #e47d31;
+$Grey: #f8f8f8;
+$White: #ffffff;
+$Yellow: #f8e71c;
+$Black: #000;
+
+// Font Size
+$XSmall: 10px;
+$Small: 12px;
+$Medium: 14px;
+$Large: 16px;
+$XLarge: 20px;
+
+// Font Weight
+$xthin: 300;
+$hin: 400;
+$Normal: 500;
+$bold: 700;
+$bolder: 900;
+
+// Border Bottoms
+$BottomW: 5px solid $White;
+$BottomO: 5px solid $Orange;
+$BottomG: 3px solid $Grey;
+
+// Box Shadow
+$BoxShadow: 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.05);
+
+// Mixins
+
+@mixin title {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  border-bottom: 5px solid $Orange;
+  font-size: xx-large;
+}
+
+@mixin med-button {
+  background-color: #e47d31;
+  border-radius: 50px;
+  border: 1px solid rgba($color: #000000, $alpha: 0);
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 0;
+  color: white;
+  font-size: x-large;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@mixin input-fields {
+  height: 100%;
+  font-size: 20px;
+  border: 1px solid rgba($color: lightgrey, $alpha: 1.0);
+  border-radius: 10px;
+  padding-left: 10px;
+}

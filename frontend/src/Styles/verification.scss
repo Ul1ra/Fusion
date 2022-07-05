@@ -1,0 +1,56 @@
+@import '../Variables/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  h1{
+    @include title
+  }
+
+  .input-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    
+    .input {
+      display: flex;;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      
+      .input-left, .input-right{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        // 
+        
+
+        .input-field-user {
+          @include input-fields;
+            margin: 10% 10% 10%;
+            padding: 5% 0 5%;
+            padding-left: 10px;
+            // height: 100%;
+            width: 90%;
+            
+        }
+      }
+    }
+  }
+
+  .button-container {
+
+    .button-medium {
+      @include med-button
+    }
+  }
+}

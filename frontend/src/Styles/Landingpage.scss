@@ -1,0 +1,58 @@
+@import '../Variables/_variables.scss';
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  .header {
+    width: 100%;
+    height: 33%;
+    background-image: url('../assets/header.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .search {
+  
+      .inputbar {
+        @include input-fields;
+        margin-right: 10px;
+        height: 45px;
+        width: 400px;
+      }
+      .medium-button {
+        @include med-button;
+      }
+    }
+  }
+
+  .title-h3 {
+    @include title;
+  }
+
+  .restaurants-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+
+    .restaurant-container {
+      margin: 5%;
+    }
+  }
+
+  .medium-button{
+    @include med-button;
+  }
+
+  
+
+}
+
