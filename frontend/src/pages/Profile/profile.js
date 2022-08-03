@@ -96,7 +96,7 @@ const Profile = () => {
               <h4>ABOUT {profile.first_name.toUpperCase()}</h4>
               <h5>Location</h5>
               <p>{profile.location}</p>
-              <h5>Luna member since</h5>
+              <h5>fusion member since</h5>
               <p>{profile.date_joined}</p>
               <h5>Things I love</h5>
               <p>{profile.interests}</p>

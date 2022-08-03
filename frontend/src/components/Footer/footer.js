@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='bottom'>
-          <p>© Copyright Luna 2022</p>
+          <p>© Copyright fusion 2022</p>
         </div>
       </div>
     )

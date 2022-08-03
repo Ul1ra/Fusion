@@ -2,7 +2,7 @@ version: '3'
 
 services:
   backend:
-    image: luna-backend:latest
+    image: fusion-backend:latest
     ports:
       - 8000:8000
     volumes:

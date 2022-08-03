@@ -19,8 +19,8 @@ RUN chmod +x ./scripts*
 
 RUN /opt/conda/bin/conda env create -f /backend/requirements.yml
 
-ENV PATH /opt/conda/envs/luna-backend/bin:$PATH
-RUN echo "source activate luna-backend" >~/.bashrc
+ENV PATH /opt/conda/envs/fusion-backend/bin:$PATH
+RUN echo "source activate fusion-backend" >~/.bashrc
 
 WORKDIR /frontend
 COPY ./frontend/package.json /frontend/

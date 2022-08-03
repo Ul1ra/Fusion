@@ -15,7 +15,7 @@ class UserSerializerMedia(serializers.ModelSerializer):
 
     def get_user_image_url(self, obj):
         try:
-            domain_main = 'https://luna-team-2.propulsion-learn.ch'
+            domain_main = 'https://fusion-team-2.propulsion-learn.ch'
             full_path = domain_main + obj.user_image.url
             return full_path
         except Exception:

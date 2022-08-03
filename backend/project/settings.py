@@ -17,7 +17,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-BASE_DIR2 = 'https://luna-team-2.propulsion-learn.ch'
+BASE_DIR2 = 'http//localhost:3000'
 
 
 
@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-)-@36j_rlkce8@uh)d3-*v)_j2t-uc)y5#hi4qr#eo1by&vib3
 DEBUG = ast.literal_eval(os.environ.get('DJANGO_DEBUG'))
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*'] # yes this is unsafe I know
 CORS_ORIGIN_ALLOW_ALL = True
 
 
@@ -73,7 +73,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://luna-team-2.propulsion-learn.ch', 'http://localhost:8000']
+CSRF_TRUSTED_ORIGINS = ['http://localhost:8000']
 
 ROOT_URLCONF = 'project.urls'
 
@@ -81,7 +81,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
     "http://localhost:3000",
     "http://127.0.0.1:8000",
-    "https://luna-team-2.propulsion-learn.ch",
 ]
 
 TEMPLATES = [

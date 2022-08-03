@@ -1,4 +1,4 @@
-name: luna-backend
+name: fusion-backend
 dependencies:
   - python==3.10.0
   - psycopg2

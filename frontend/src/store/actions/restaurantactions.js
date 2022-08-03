@@ -1,8 +1,8 @@
 import { Navigate } from "react-router-dom";
 
 export const fetchAndDispatchRestaurants = (dispatch, getState) => {
-  //const url = 'http://127.0.0.1:8000/backend/api/restaurants/';
-  const url = 'https://luna-team-2.propulsion-learn.ch/backend/api/restaurants/';
+  const url = 'http://127.0.0.1:8000/backend/api/restaurants/';
+  // const url = 'https://fusion-team-2.propulsion-learn.ch/backend/api/restaurants/';
   const method = "GET";
   const headers = new Headers({'Content-type':'application/json'});
   const config = {method,headers};
@@ -15,8 +15,8 @@ export const fetchAndDispatchRestaurants = (dispatch, getState) => {
 
 
 export const fetchAndDispatchRestaurant = (dispatch, getState, id) => {
-  //const url = `http://127.0.0.1:8000/backend/api/restaurants/${id}/`;
-  const url = `https://luna-team-2.propulsion-learn.ch/backend/api/restaurants/${id}/`;
+  const url = `http://127.0.0.1:8000/backend/api/restaurants/${id}/`;
+  // const url = `https://fusion-team-2.propulsion-learn.ch/backend/api/restaurants/${id}/`;
   const method = "GET";
   const token = localStorage.getItem("token"); 
   const headers = new Headers({ 'Authorization': `Bearer ${token}` });
@@ -30,9 +30,9 @@ export const fetchAndDispatchRestaurant = (dispatch, getState, id) => {
 }
 
 export const dispatchRestaurant = (dispatch, getState, name, category, country, street, city, zip, website, phone, e_mail, opening_hours, price_level, restaurant_image, navigate) => {
-  //const url = 'http://127.0.0.1:8000/backend/api/restaurants/new/';
+  const url = 'http://127.0.0.1:8000/backend/api/restaurants/new/';
   console.log('name', name);
-  const url = 'https://luna-team-2.propulsion-learn.ch/backend/api/restaurants/new/';
+  // const url = 'https://fusion-team-2.propulsion-learn.ch/backend/api/restaurants/new/';
   // const method = "POST";
   const token = localStorage.getItem("token"); 
   const formData = new FormData()

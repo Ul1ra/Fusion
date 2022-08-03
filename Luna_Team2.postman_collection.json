@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "e2fb5648-4543-44ab-a134-8e734b75f6e1",
-		"name": "Luna_Team_2",
+		"name": "fusion_Team_2",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -1263,10 +1263,10 @@
 							]
 						},
 						"url": {
-							"raw": "https://luna-team-2.propulsion-learn.ch/backend/api/auth/registration/validation/",
+							"raw": "https://fusion-team-2.propulsion-learn.ch/backend/api/auth/registration/validation/",
 							"protocol": "https",
 							"host": [
-								"luna-team-2",
+								"fusion-team-2",
 								"propulsion-learn",
 								"ch"
 							],
@@ -1352,10 +1352,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://luna-team-2.propulsion-learn.ch/backend/api/auth/registration/",
+							"raw": "https://fusion-team-2.propulsion-learn.ch/backend/api/auth/registration/",
 							"protocol": "https",
 							"host": [
-								"luna-team-2",
+								"fusion-team-2",
 								"propulsion-learn",
 								"ch"
 							],
@@ -1614,10 +1614,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://luna-team-2.propulsion-learn.ch/backend/api/auth/users/",
+							"raw": "https://fusion-team-2.propulsion-learn.ch/backend/api/auth/users/",
 							"protocol": "https",
 							"host": [
-								"luna-team-2",
+								"fusion-team-2",
 								"propulsion-learn",
 								"ch"
 							],

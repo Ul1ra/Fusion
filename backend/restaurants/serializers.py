@@ -15,7 +15,7 @@ class RestaurantSerializerMedia(serializers.ModelSerializer):
 
     def get_restaurant_image_url(self, obj):
         try:
-            domain_main = 'https://luna-team-2.propulsion-learn.ch'
+            domain_main = 'http://127.0.0.1:8000'
             full_path = domain_main + obj.restaurant_image.url
             return full_path
         except Exception:

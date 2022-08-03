@@ -1,6 +1,6 @@
 export const getUserData = (dispatch, getState) => {
-  //const url = 'http://127.0.0.1:8000/backend/api/users/me/';
-  const url = 'https://luna-team-2.propulsion-learn.ch/backend/api/auth/me/';
+  const url = 'http://127.0.0.1:8000/backend/api/users/me/';
+  // const url = 'https://fusion-team-2.propulsion-learn.ch/backend/api/auth/me/';
   const method = 'GET';
   const token = localStorage.getItem("token"); 
   const headers = new Headers({ 'Authorization': `Bearer ${token}` });
